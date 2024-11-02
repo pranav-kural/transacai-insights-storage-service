@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: iss-app
-          image: us-east1-docker.pkg.dev/transac-ai/iss-repo/transac-ai-iss-gke:latest
+          image: us-east1-docker.pkg.dev/transac-ai/iss-repo/transac-ai-iss-gke:1.0.0
           ports:
             - containerPort: 4000
           env:

@@ -1,0 +1,2 @@
+date,time,timezone,version,title,description,change_type,lead,deployment_command,pods_restarted,pods_restart_command,deployment_status,tested
+2024-11-02,11:20:00,EST,1.0.0,Enfore client_id in queries,Updates to enfore the condition of providing client_id in queries and mutations,minor,Kural,gcloud builds submit --tag us-east1-docker.pkg.dev/transac-ai/iss-repo/transac-ai-iss-gke:1.0.1 .,true,kubectl rollout restart deployment transac-ai-iss-gke,success,false
