@@ -1,5 +1,7 @@
 {
-  "name": "typescript-graphql-nexus",
+  "name": "transac-ai-insights-storage-service",
+  "version": "1.0.0",
+  "description": "GraphQL API service of Transac AI project to store and access insights.",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --no-notify --respawn --transpile-only src/server",

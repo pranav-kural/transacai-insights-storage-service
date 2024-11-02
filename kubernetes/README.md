@@ -29,7 +29,7 @@ gcloud artifacts repositories create iss-repo \
 4. Build and push the image to the repository.
 
 ```bash
-gcloud builds submit --tag us-east1-docker.pkg.dev/transac-ai/iss-repo/transac-ai-iss-gke:1.0.1 .
+gcloud builds submit --tag us-east1-docker.pkg.dev/transac-ai/iss-repo/transac-ai-iss-gke:1.0.2 .
 ```
 
 5. Create a GKE cluster.
