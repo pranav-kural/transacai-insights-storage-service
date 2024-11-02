@@ -63,6 +63,7 @@ export const Query = objectType({
       resolve: (_, args, context: Context) => {
         return context.prisma.insight.findMany({
           where: {
+            clientId: args.data.clientId,
             createdAt: {
               gte: args.data.fromTime,
               lte: args.data.toTime,

@@ -42,6 +42,7 @@ export const InsightsOrderedByCreatedAtInput = inputObjectType({
 export const InsightsTimeRangeInput = inputObjectType({
   name: 'InsightsTimeRangeInput',
   definition(t) {
+    t.nonNull.string('clientId')
     t.nonNull.field('fromTime', { type: 'DateTime' })
     t.nonNull.field('toTime', { type: 'DateTime' })
   },

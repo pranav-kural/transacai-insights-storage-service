@@ -32,11 +32,13 @@ export const Mutation = objectType({
       type: 'Insight',
       args: {
         id: nonNull(intArg()),
+        clientId: nonNull(stringArg()),
       },
       resolve: (_, args, context: Context) => {
         return context.prisma.insight.delete({
           where: {
             id: args.id,
+            clientId: args.clientId,
           },
         })
       },
